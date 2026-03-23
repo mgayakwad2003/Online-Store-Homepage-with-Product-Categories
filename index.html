@@ -20,37 +20,17 @@
 
     <!-- Categories -->
     <section class="categories">
-        <button>All</button>
-        <button>Electronics</button>
-        <button>Fashion</button>
-        <button>Books</button>
+    <button onclick="filterProducts('All')">All</button>
+    <button onclick="filterProducts('Electronics')">Electronics</button>
+    <button onclick="filterProducts('Fashion')">Fashion</button>
+    <button onclick="filterProducts('Books')">Books</button>
     </section>
 
     <!-- Products -->
-    <section class="products">
+    <section class="products" id="productContainer">
+    <!-- Products will come from JavaScript -->
+</section>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="">
-            <h3>Smartphone</h3>
-            <p>₹15,000</p>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="">
-            <h3>T-shirt</h3>
-            <p>₹500</p>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/150" alt="">
-            <h3>Book</h3>
-            <p>₹300</p>
-            <button>Add to Cart</button>
-        </div>
-
-    </section>
-
+<script src="script.js"></script>
 </body>
 </html>
