@@ -21,7 +21,7 @@ function displayProducts(productList) {
                 <h3>${product.name}</h3>
                 <p>₹${product.price}</p>
                 <p>⭐ ${product.rating}</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('${product.name}')">Add to Cart</button>
             </div>
         `;
     });
@@ -82,4 +82,35 @@ function searchProducts(keyword) {
     );
 
     displayProducts(filtered);
+}
+let cart = [];
+
+// Add to Cart
+function addToCart(productName) {
+    cart.push(productName);
+    updateCart();
+}
+
+// Update Cart UI
+function updateCart() {
+    document.getElementById("cartCount").innerText = cart.length;
+
+    const cartItems = document.getElementById("cartItems");
+    cartItems.innerHTML = "";
+
+    cart.forEach(item => {
+        cartItems.innerHTML += `<li>${item}</li>`;
+    });
+}
+
+// Toggle Cart
+function toggleCart() {
+    document.getElementById("cart").classList.toggle("active");
+}
+
+// Checkout
+function checkout() {
+    alert("Order placed successfully!");
+    cart = [];
+    updateCart();
 }

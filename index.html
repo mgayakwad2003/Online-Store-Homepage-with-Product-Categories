@@ -10,12 +10,12 @@
 
     <!-- Header -->
     <header>
-        <h1>My Online Store</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Categories</a>
-            <a href="#">Cart</a>
-        </nav>
+    <h1>My Online Store</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
     </header>
 
     <section class="banner">
@@ -67,5 +67,11 @@
 </section>
 
 <script src="script.js"></script>
+<div id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <button onclick="checkout()">Checkout</button>
+</div>
 </body>
+
 </html>

@@ -136,3 +136,43 @@ nav a {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+/* Cart */
+.cart {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: right 0.3s;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart h2 {
+    text-align: center;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart li {
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.cart button {
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
