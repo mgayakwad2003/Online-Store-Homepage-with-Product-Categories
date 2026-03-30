@@ -18,6 +18,11 @@
         </nav>
     </header>
 
+    <section class="banner">
+    <h2>Welcome to My Online Store</h2>
+    <p>Best Deals | Latest Trends | Shop Now</p>
+</section>
+
     <!-- Categories -->
     <section class="categories">
     <button onclick="filterProducts('All')">All</button>
@@ -25,6 +30,10 @@
     <button onclick="filterProducts('Fashion')">Fashion</button>
     <button onclick="filterProducts('Books')">Books</button>
     </section>
+
+    <div class="search-box">
+    <input type="text" placeholder="Search products..." onkeyup="searchProducts(this.value)">
+</div>
 
     <section class="controls">
 

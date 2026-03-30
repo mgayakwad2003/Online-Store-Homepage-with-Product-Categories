@@ -74,3 +74,12 @@ function sortProducts(type) {
 
 // Initial Load
 displayProducts(products);
+
+// Search Function
+function searchProducts(keyword) {
+    const filtered = filteredProducts.filter(p =>
+        p.name.toLowerCase().includes(keyword.toLowerCase())
+    );
+
+    displayProducts(filtered);
+}
